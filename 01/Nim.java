@@ -28,8 +28,6 @@ class Nim {
         int numStones = 12;
         String currentPlayer = "USER";
 
-        boolean done= false;
-
         while(numStones > 0){
             if(currentPlayer == "USER"){
                 System.out.println("How many stones do you want to remove? Enter 1, 2, or 3.");
@@ -37,8 +35,8 @@ class Nim {
                 numStones -= stonesToRemove;
                 System.out.println("Stones remaining: " + numStones);
                       if(numStones < 1){
-                          //break;
-                          done=true;
+                         break;
+
                       }
                 currentPlayer = "COMPUTER";
 
@@ -48,8 +46,8 @@ class Nim {
                 numStones -= stonesToRemove;
                 System.out.println("Stones remaining: " + numStones);
                 if(numStones < 1){
-                  //  break;
-                  done=true;
+                     break;
+
                                  }
                 currentPlayer = "USER";
             }
