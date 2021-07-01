@@ -22,7 +22,7 @@ We need to know how many stones are in each pot and how to store the new amounts
 import java.util.*;
 import java.util.Scanner;
 
-public class Mancala {
+public class Mancala1 {
 
   public static void main (String[] args) {
 
