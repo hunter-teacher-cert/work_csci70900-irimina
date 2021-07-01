@@ -5,6 +5,7 @@ public class Craps{
 public static void main(String[] args)
 {
   System.out.println(roll(10));
+  System.out.println(roll(5));
   }
 
 public static int roll(int num1)
@@ -20,7 +21,6 @@ You will write a program named Craps.java that will play a simplified game of cr
 There should be at least three static methods in addition to main.
 One named roll which accepts an integer parameter and returns a random number
  between 1 and that number, inclusive. */
-
 
 
  public static int shoot(int dice, int max)
@@ -76,8 +76,7 @@ the value he rolled is now called the Point
 the shooter continues to shoot (roll) until he either rolls the Point again
 at which point he wins or he rolls a 7 at which point he loses.
 The main program should take a parameter from the command line, play that
-many
-rounds and as it plays indicate each time the shooter wins or loses.
+many rounds and as it plays indicate each time the shooter wins or loses.
 The program should also print out the status of the rounds they occur.
 */
 
