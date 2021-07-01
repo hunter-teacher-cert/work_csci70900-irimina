@@ -27,7 +27,8 @@ public class Mancala {
   public static void main (String[] args) {
 
     //array declaration and initialization for the Mancala board
-    int[] manc_board= {4,4,4,4,4,4,0, 4,4,4,4,4,4,0 };
+    System.out.println("Testing board");
+    int[] manc_board= {4,4,4,4,4,4,0,4,4,4,4,4,4,0 };
 
     // print out the contents of the board using  Arrays.toString() method. This method returns a string representation of the contents of the specified array.
     System.out.println(Arrays.toString(manc_board));
@@ -49,15 +50,17 @@ public static void printBoard(int[] manc_board){
     for(int i = 6; i>=0; i--) {
       System.out.print(manc_board[i]+ " ");
       }
+    System.out.println(" ");
 
     //prints the contents on the computer's side of the board
-    for(int i = 7; i<= 13; i++) {
+     for(int i = 7; i<= 13; i++) {
       System.out.print(manc_board[i]+ " ");
         }
 } // end of printBoard
 
  //player turn method
  public static int[] playerTurn(int[] manc_board){
+
     System.out.println("Choose a pot to pick up stones from 0-5");
     Scanner choice = new Scanner(System.in);
     int playerChoice = choice.nextInt();
@@ -81,9 +84,16 @@ public static void printBoard(int[] manc_board){
     System.out.println("Modified board: " + Arrays.toString(manc_board2));
 
     return manc_board;
- }
+ } // end of player turn method.
 
+//computer Turn
 
+/*
+Next steps:
+Assign the computer to pick a random number for the pit it can choose from
+Continue creating functionality to transfer stones to the appropriate pits using the for loop
+
+*/
 
 }// end of class
 
