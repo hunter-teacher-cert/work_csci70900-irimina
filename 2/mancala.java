@@ -33,6 +33,7 @@ public class Mancala {
     // print out the contents of the board using  Arrays.toString() method. This method returns a string representation of the contents of the specified array.
     System.out.println(Arrays.toString(manc_board));
     System.out.println(" ");
+    System.out.println(" ");
 
    // print the Mancala board
    printBoard(manc_board);
