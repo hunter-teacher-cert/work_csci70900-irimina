@@ -19,6 +19,7 @@ public class Cgol
   //initialize empty board (all cells dead)
   public static char[][] createNewBoard(int rows, int cols) {
 
+
   }
 
 
@@ -58,9 +59,10 @@ public class Cgol
 
   public static void main( String[] args )
   {
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
     char[][] board;
     board = createNewBoard(25,25);
+        /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //breathe life into some cells:
     setCell(board, 0, 0, 'X');
     setCell(board, 0, 1, 'X');
