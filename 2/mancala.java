@@ -51,6 +51,7 @@ public static void printBoard(int[] manc_board){
       System.out.print(manc_board[i]+ " ");
       }
     System.out.println(" ");
+    System.out.println(" ");
 
     //prints the contents on the computer's side of the board
      for(int i = 7; i<= 13; i++) {
