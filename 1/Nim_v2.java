@@ -21,10 +21,10 @@ class Nim_v2 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
         System.out.println("Welcome to the game of Nim. There is a bag with 12 stones.");
         System.out.println("To play this game, you can remove 1-3 stones. You will be playing against the computer.");
         System.out.println("Whoever removes the last stone is the winner.");
+        System.out.printls(" ");
 
         int numStones = 12;
         String currentPlayer = "USER";
@@ -53,6 +53,6 @@ class Nim_v2 {
     }
 
     public static int compNum(){
-        return (int) (Math.random()*3 + 1);
+        return (int)(Math.random()*3 + 1);
     }
 }
