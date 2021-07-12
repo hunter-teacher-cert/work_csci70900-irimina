@@ -4,15 +4,26 @@ import java.util.Random;
 public class Craps{
 public static void main(String[] args)
 {
-  System.out.println(roll(10));
-  System.out.println(roll(5));
+  Scanner input = new Scanner(System.in);
+
+  //The main program should take a parameter from the command line
+  System.out.println("Enter number of rounds you would like to play: ");
+	int rounds = input.nextInt();
+
+  //play that many rounds and as it plays indicate each time the shooter wins or loses
+  for(int i = 0; i<rounds; i++)
+  {
+
+    System.out.println("Round: " +i);
+    System.out.println(round());
   }
 
+}
 public static int roll(int num1)
 {
   Random ranNum = new Random(); // instance of random class
-  int result = ranNum.nextInt(num1-1);
-  result++;
+  int result = ranNum.nextInt(num1+1);
+  //result++;
   return result;
 }
 /*
@@ -38,28 +49,60 @@ a number of dice and the maximum value for those dice and returns the result of
 rolling those dice.*/
 
 
-public static boolean round()
+public static String round()
 {
- int playerRoll= shoot(3,6);
- int point= -1;
+//should return something to indicate if the shooter of the round wins or loses.
+//The shooter shoots (rolls) two dice.
 
- while (true)
-   {
+ int playerRoll= shoot(2,6);
+
+ //int point= -1;
+ System.out.println("You rolled a "+ playerRoll);
+
+ //while (true)
+   //{
      if (playerRoll==2 || playerRoll==3 || playerRoll==12)
+     //If 2,3, or 12,that’s Craps and he loses.
       {
-        return false;
+        //return false;
+        return "That's Craps, You lose.";
 
       }
      else if( playerRoll ==7 || playerRoll==11)
      {
-       return true;
+       //return true;
+       return "That's a natural. You win.";
      }
      else
      {
-       point=playerRoll;
-       playerRoll= shoot(3,6);
+       System.out.println("You continue to shoot until you roll Point or 7.");
+       //the value rolled is now called Point
+       int point = playerRoll;
+       //point=playerRoll;
+
+       boolean shoots = true;
+
+       while(shoots)
+       {
+          playerRoll= shoot(2,6);
+          if(playerRoll == point)
+          {
+            shoots=false;
+            return "You rolled a "+playerRoll + " which is Point. You win!";
+          }
+          else if(playerRoll== 7)
+          {
+            shoots=false;
+            return "You rolled a "+ playerRoll + " You lose";
+          }
+          else
+          {
+            System.out.println("You rolled a " + playerRoll + " which means you roll again!");
+          }
+       }
+      return "End of round";
      }
-   }
+  // }
 }
 /*
 The third method should be named round. It should accept no parameters and it
