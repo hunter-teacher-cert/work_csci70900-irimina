@@ -5,12 +5,13 @@ public class SortDemoDriver {
     public static void main(String[] args) {
 
 	SortDemo sd = new SortDemo();
+	/*
 	System.out.println(sd);
 
-	SortDemo sd2 = new SortDemo(20);
+	  SortDemo sd2 = new SortDemo(20);
 	System.out.println(sd2);
-
-	/* part 2 test lines */
+		
+	// part 2 test lines
 	int i;
 	i = sd.findSmallestIndex(0);
 	System.out.println("sd["+ i +"] = "+sd.get(i)+" : " + sd);
@@ -18,15 +19,20 @@ public class SortDemoDriver {
 	i = sd2.findSmallestIndex(0);
 	System.out.println("sd2["+ i + "] = "+sd2.get(i)+" : " + sd2);
 
-//linear search test
- System.out.println("linearSearch test. The value you look for is at index: ");
- System.out.println(sd2.linearSearch(5));
+	// part 3 test lines
 
-	/* part 3 test lines */
-	/*
-	  System.out.println(sd);
+	System.out.println(sd);
 	  sd.sort();
 	  System.out.println(sd);
 	*/
+
+	sd.testMerge();
+  	System.out.print("");
+//System.out.println();
+	System.out.print("List before: ");
+	System.out.println(sd);
+	sd.msortTest();
+  System.out.print("List after: ");
+	System.out.println(sd);
     }
 }
