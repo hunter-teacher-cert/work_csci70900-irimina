@@ -24,6 +24,7 @@
 *.png
 *.js
 *.css
+*element-list
 
 # Ignore Mac system files
 .DS_store
