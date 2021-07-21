@@ -34,4 +34,10 @@ node_modules
 # Ignore SASS config files
 .sass-cache
 
+# Ignore HTML files
+.html
+
+# Ignore javascript
+.js
+
 #
