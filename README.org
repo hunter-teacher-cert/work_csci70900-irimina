@@ -2,16 +2,32 @@
 * First name: Iulian
 * Github username: irimina
 
-* Instructions:
-
+* Task Instructions:
 Fill out the top of this form, commit and push it back to GitHub.
 
 For each assignment make a directory as specified in the
 assignment. Add the required files, commit and push them up to Github.
 
 
+* Git useful commands
 
-* Resources:
+  - remove directory from git repo
+git rm -r test_directory    //this deletes from filesystem
+git commit -m "Removed test directory"
+git push origin master   
+
+
+    - remove directory from git but not local
+git rm -r --cached test_directory
+git commit -m "Removed test directory from repo"
+git push origin master   
+
+
+  - unstage a file you committed
+git restore --staged test_directory
+
+
+* Java Resources:
 - [[https://introcs.cs.princeton.edu/java/][CS - Sedgewick / Wayne - class text]]
 - [[https://horstmann.com/sjsu/cs046/][Intro to Java - Udacity CS046]]
 - [[https://chortle.ccsu.edu/Java5/index.html#03][Intro to CS using Java - Kjell]]
