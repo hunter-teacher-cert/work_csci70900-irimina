@@ -20,6 +20,10 @@
 *.zip
 *.tar.gz
 *.rar
+*.html
+*.png
+*.js
+*.css
 
 # Ignore Mac system files
 .DS_store
@@ -45,6 +49,4 @@ node_modules
 
 # Ignore png
 .png
-
-
 #
