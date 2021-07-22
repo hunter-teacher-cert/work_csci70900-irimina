@@ -12,9 +12,9 @@ assignment. Add the required files, commit and push them up to Github.
 * Git useful commands
 
 - remove directory from git repo
-	-$ git rm -r test_directory   
-	-$ git commit -m "Removed test directory"
-	-$ git push origin master   
+	- $ git rm -r test_directory   
+	- $ git commit -m "Removed test directory"
+	- $ git push origin master   
 
 
 - remove directory from git but not local
@@ -24,7 +24,7 @@ assignment. Add the required files, commit and push them up to Github.
 
 
 - unstage a file you committed
-	-$ git restore --staged test_directory
+	- $ git restore --staged test_directory
 
 
 * Java Resources:
