@@ -1,4 +1,4 @@
-* Last name: Irimina  
+* Last name: Irimina
 * First name: Iulian
 * Github username: irimina
 
@@ -12,19 +12,22 @@ assignment. Add the required files, commit and push them up to Github.
 * Git useful commands
 
 - remove directory from git repo
-	- $ git rm -r test_directory   
+	- $ git rm -r test_directory
 	- $ git commit -m "Removed test directory"
-	- $ git push origin master   
+	- $ git push origin master
 
 
 - remove directory from git but not local
 	- $ git rm -r --cached test_directory
 	- $ git commit -m "Removed test directory from repo"
-	- $ git push origin master   
+	- $ git push origin master
 
 
 - unstage a file you committed
 	- $ git restore --staged test_directory
+
+- Rename the file, specifying the old file name and the new name you'd like to give the file.
+	- $ git mv old_filename new_filename
 
 
 * Java Resources:
