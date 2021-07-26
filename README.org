@@ -14,6 +14,7 @@ assignment. Add the required files, commit and push them up to Github.
 - create a permanent link to a code snippet
   - $ detailed instructions here: https://bit.ly/link-to-code
 
+
 - remove directory from git repo
 	- $ git rm -r test_directory
 	- $ git commit -m "Removed test directory"
