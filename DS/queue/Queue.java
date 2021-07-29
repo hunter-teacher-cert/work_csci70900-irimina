@@ -1,4 +1,7 @@
 //group  benson, julian,stephannia
+
+//diagram and concept link https://www.cs.usfca.edu/~galles/visualization/QueueArray.html
+
 import java.io.*;
 import java.util.*;
 
