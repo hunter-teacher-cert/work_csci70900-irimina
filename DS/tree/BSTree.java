@@ -224,16 +224,35 @@ public void delete(int key){
           {
             trailer.setRight(null);
           }
-      } else if ()
-/* case 2 check to see if front has one child */)
+      } else if (true)
+/* case 2 check to see if front has one child */
 
     {
 	    // repoint front's parent to front's child
 	   } else {
-	    // case 3 front has two children
-	    // find the node with the largest value
-	    // on fronts left subtree
-	    // and replace front with it.
+       // case 3 front has two children
+       // find the node with the largest value
+       // on fronts left subtree
+       // and replace front with it.
+
+    //delete a node with 2 children; look for smallest node on the right subtree
+    // keep going left
+
+    TreeNode smallest = front.getRight();
+    TreeNode smallestParent = front;
+
+    while(smallest.getLeft() !=null)
+    {
+      smallestParent= smallest;
+      smallest = smallest.getLeft();
+    }
+
+    int newInfo= smallest.getData();
+    delete(smallest.getData());
+    front.setData(newInfo);
+
+
+
 	    }
 	} // end delete
 // =============== end of PART 5, delete routine
